@@ -1,25 +1,26 @@
-\documentclass[12pt, letterpaper]{article}
-
-\title{My First Latex Document}
-\author{Rana Universe\thanks{Mail Us AT: RanaUniverse321@gmail.com}}
-
-\date{August 2025}
+\documentclass{article}
+\usepackage{setspace}
+\usepackage{lipsum} % to generate dummy text
 
 \begin{document}
-\maketitle
-
-
-This is the first paragraph.
-
-\noindent This paragraph is not indented.
-
-\indent This paragraph is indented manually.
 
 
 
+\begin{spacing}{1}
+	This paragraph is double spaced.
+	Only this part will be affected.	This paragraph is double spaced.
+	Only this part will be affected.	This paragraph is double spaced.
+	Only this part will be affected.	This paragraph is double spaced.
+	Only this part will be affected.
+\end{spacing}
 
-% This line here is a comment. It will not be typeset in the document.
+\begin{spacing}{3}
+
+
+This paragraph is back to normal (single spacing).This paragraph is back to normal (single spacing).This paragraph is back to normal (single spacing).This paragraph is back to normal (single spacing).This paragraph is back to normal (single spacing).This paragraph is back to normal (single spacing).This paragraph is back to normal (single spacing).
+\end{spacing}
+
+         % Paragraph is single spaced
+
+	
 \end{document}
-
-
-
