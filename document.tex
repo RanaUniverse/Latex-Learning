@@ -1,55 +1,15 @@
-\documentclass[12pt, letterpaper]{article}
-
-\title{My First Latex Document}
-\author{Rana Universe\thanks{Mail Us AT: RanaUniverse321@gmail.com}}
-\date{August 2025}
-
-
-\usepackage{lipsum}
-
-
-
+\documentclass{article}
+\usepackage{graphicx}% LaTeX package to import graphics
+\graphicspath{{images/}} % configuring the graphicx package
+ 
 \begin{document}
-\maketitle
+The universe is immense and it seems to be homogeneous, 
+on a large scale, everywhere we look.
 
-
-I am Rana Universe...
-
-I am Rana Universe...
-
-I am Rana Universe...
-
-I am Rana Universe...
-
-I am Rana Universe...
-
-I am Rana Universe...
-
-I am Rana Universe...
-
-I am Rana Universe...
-
-I am Rana Universe...
-
-\vspace{3em}
-
-
-
-
-
-\lipsum[1]
-
-\lipsum[2]
-
-\vspace{1em}
-
-\lipsum[1]
-
-
-
-
-% This line here is a comment. It will not be typeset in the document.
+% The \includegraphcs command is 
+% provided (implemented) by the 
+% graphicx package
+\includegraphics{universe}  
+ 
+There's a picture of a galaxy above.
 \end{document}
-
-
-
