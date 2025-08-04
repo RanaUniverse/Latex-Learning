@@ -10,21 +10,41 @@
 \usepackage{graphicx} %LaTeX package to import graphics
 \graphicspath{{images/}} %configuring the graphicx package
 
+% \renewcommand{\figurename}{Graph Image}
+% To get Figure 1,2,3... i will use normal if i want custom name i will uncomment this upper
+
 
 \begin{document}
 \maketitle
 
 
 
-The universe is immense and it seems to be homogeneous, 
-on a large scale, everywhere we look.
+% The universe is immense and it seems to be homogeneous, 
+% on a large scale, everywhere we look.
 
-% The \includegraphics command is 
-% provided (implemented) by the 
-% graphicx package
-\includegraphics{universe.jpg}  
+% % The \includegraphics command is 
+% % provided (implemented) by the 
+% % graphicx package
+% \includegraphics{universe.jpg}  
 
-There's a picture of a galaxy above.
+% There's a picture of a galaxy above.
+
+
+
+\begin{figure}[h]   % Start figure environment
+    \centering   % Center the image
+    \includegraphics[width=0.75\textwidth]{mesh.png}    % Image file
+    \caption{\textbf{A nice plot.}}   
+    \label{fig:mesh1}   % Label: Internal name used to reference the figure
+\end{figure}
+
+As you can see in \textbf{Figure \ref{fig:mesh1}}, the function grows near the origin. This example is on page \pageref{fig:mesh1}.
+
+
+As you can see in \textbf{\textit{Figure \ref{fig:mesh1}}}, the function grows near the origin. This example is on page \pageref{fig:mesh1}.
+
+
+
 
 
 \vspace{10em}
