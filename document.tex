@@ -14,9 +14,34 @@
 % To get Figure 1,2,3... i will use normal, if i want custom name i will uncomment this upper, which will say, Graphh Image 1, 2, 3 ...
 
 
+\usepackage{pgffor} % For loops i will use this package so that i can use repetative work easily
+
+
+
+
+
+
 \begin{document}
 \maketitle
 
+
+
+
+
+
+
+
+
+\foreach \n in {1,...,9} {
+    I am Rana Universe...(\n) \par
+}
+
+\vspace{3em}
+\foreach \n in {1,...,9} {
+    \noindent \textbf{\n.} I am Rana Universe... \par
+
+    \textbf{\n.} I am Rana Universe... \par
+}
 
 
 
