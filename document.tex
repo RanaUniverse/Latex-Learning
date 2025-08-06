@@ -11,23 +11,12 @@
 \graphicspath{{images/}} %configuring the graphicx package
 
 % \renewcommand{\figurename}{Graph Image}
-% To get Figure 1,2,3... i will use normal if i want custom name i will uncomment this upper
+% To get Figure 1,2,3... i will use normal, if i want custom name i will uncomment this upper, which will say, Graphh Image 1, 2, 3 ...
 
 
 \begin{document}
 \maketitle
 
-
-
-% The universe is immense and it seems to be homogeneous, 
-% on a large scale, everywhere we look.
-
-% % The \includegraphics command is 
-% % provided (implemented) by the 
-% % graphicx package
-% \includegraphics{universe.jpg}  
-
-% There's a picture of a galaxy above.
 
 
 
@@ -36,13 +25,15 @@
 
     % \includegraphics[width=.5\textwidth]{mesh.png}    
 
+    % This below is for adding a black border
     \fbox{
         \includegraphics[width=0.5\textwidth]{mesh.png}
     }
 
     \caption{\textbf{A nice plot.}}   
-    \label{fig:mesh1}   % Label: Internal name used to reference the figure
+    \label{fig:mesh1}   % Label: Internal name used to reference the figure, it should be unique
 \end{figure}
+
 
 As you can see in \textbf{Figure \ref{fig:mesh1}}, the function grows near the origin. This example is on page \pageref{fig:mesh1}.
 
@@ -51,7 +42,7 @@ As you can see in \textbf{\textit{Figure \ref{fig:mesh1}}}, the function grows n
 
 
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{linux_logo.png}
 	\caption{\textbf{Linux Logo}}
