@@ -18,6 +18,9 @@
 
 
 
+\usepackage{amsmath}
+
+
 
 
 
@@ -65,7 +68,6 @@ E=m
 % This is the variable type of things, i will use this below and use the value.
 \newcommand{\titlevariable}{Let's Start Using the \textbf{`amsmath'}}
 
-
 \noindent\rule{\linewidth}{5pt}
 \begin{center}
 \titlevariable \par
@@ -74,11 +76,44 @@ E=m
 
 
 \begin{center}
-\noindent\rule{\linewidth}{5pt} \\
+\noindent\rule{\linewidth}{5pt}
 % Let's Start Using the \textbf{`amsmath'} \par
 \titlevariable \par
 \noindent\rule{\linewidth}{5pt}
 \end{center}
+
+
+
+
+% This below equaiton will not numbering due to star, and it will not allign as i don't use the &= below
+\begin{equation*}
+\begin{split}
+A = \frac{\pi r^2}{2} \\
+  = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation*}
+
+
+
+
+% The below case it will shows alignment because of &= and good for use a good looking of some equations
+\begin{equation} \label{eq1}
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+ & = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation}
+
+
+
+
+\begin{equation}
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+B +C + X     Y  Z& = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation}
+
 
 
 
