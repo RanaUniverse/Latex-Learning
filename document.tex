@@ -20,6 +20,7 @@
 
 \usepackage{amsmath}
 
+\usepackage{breqn}
 
 
 
@@ -113,6 +114,52 @@ A & = \frac{\pi r^2}{2} \\
 B +C + X     Y  Z& = \frac{1}{2} \pi r^2
 \end{split}
 \end{equation}
+
+
+% This below is bad as it exis the page size so all content will not shows here, so i should not use this, to use this normal i need to breake thsi manually.
+% \begin{equation}
+% \begin{split}
+% y & = a + bc + def + xy + 98 + 89x + yt + ty^2 + \alpha + \beta + \gamma + m^2 + n^3 + \frac{a}{b} + \sqrt{x^2 + y^2} + \delta + \epsilon + pq + rs + tu + vw + xyz + 1234
+% \end{split}
+% \end{equation}
+
+
+
+% For this i need to use a math related package called, breqn which help to write long equation goodly without beign cutting by the page size.
+\begin{dmath}
+y = a + bc + def + xy + 98 + 89x + yt + ty^2 + \alpha + \beta + \gamma + m^2 + n^3 + \frac{a}{b} + \sqrt{x^2 + y^2} + \delta + \epsilon + pq + rs + tu + vw + xyz + \alpha + \beta + \gamma + m^2 + n^3 + \frac{a}{b} + \sqrt{x^2 + y^2} + \delta + \epsilon + pq + rs + tu + vw + xyz + \alpha + \beta + \gamma + m^2 + n^3 + \frac{a}{b} + \sqrt{x^2 + y^2} + \delta + \epsilon + pq + rs + tu + vw + xyz + 1234
+\end{dmath}
+
+
+Let's Write some basic Pythagorean themorem.
+
+$$ a^2 + b^2 = c^2 $$
+
+Here `c' represents the hypotenuse, and `a' and `b' represent the other two sides. 
+
+
+Below the equation number will start form my own wish like number 1 automatically.
+
+\setcounter{equation}{0}  % Start equation numbering from 0+1
+
+\begin{equation}
+    a^2 + b^2 = c^2
+    \label{eq:pythagoras1}
+\end{equation}
+
+
+As shown in Equation~\ref{eq:pythagoras1}, the sides of a right triangle follow this relation.
+
+
+\begin{equation}
+    a^2 + b^2 = c^2 
+    \tag{Rana 1}
+    \label{eq:pythagoras2}
+\end{equation}
+
+Upper is a another example of using numbering by myself manually.
+
+As shown in Equation~ \textbf{\ref{eq:pythagoras2}}, which numbering was added manually is now working.
 
 
 
